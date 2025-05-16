@@ -74,6 +74,21 @@ public class baithuchanh {
 		frame.getContentPane().add(btnNewButton_1);
 		
 		JButton btnNewButton_2 = new JButton("chucnang3");
+		btnNewButton_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				try {
+					double num1 = Double.parseDouble(textField.getText());
+					double num2 = Double.parseDouble(textField_1.getText());
+
+					double max = Math.max(num1, num2);
+
+					// Hiển thị kết quả bằng cửa sổ thông báo
+					javax.swing.JOptionPane.showMessageDialog(frame, "Số lớn hơn là: " + max);
+				} catch (NumberFormatException ex) {
+					javax.swing.JOptionPane.showMessageDialog(frame, "Vui lòng nhập số hợp lệ!", "Lỗi", javax.swing.JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
 		btnNewButton_2.setBounds(464, 271, 85, 21);
 		frame.getContentPane().add(btnNewButton_2);
 		
