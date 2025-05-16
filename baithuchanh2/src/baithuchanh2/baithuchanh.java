@@ -78,6 +78,18 @@ public class baithuchanh {
 		frame.getContentPane().add(btnNewButton_2);
 		
 		JButton btnNewButton_3 = new JButton("chucnang4");
+		btnNewButton_3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+		        try {
+		            double num1 = Double.parseDouble(textField.getText());
+		            double num2 = Double.parseDouble(textField_1.getText());
+		            double min = Math.min(num1, num2);
+		            javax.swing.JOptionPane.showMessageDialog(frame, "Số nhỏ nhất là: " + min);
+		        } catch (NumberFormatException ex) {
+		            javax.swing.JOptionPane.showMessageDialog(frame, "Nhập số đúng định dạng đi bạn ơi!");
+		        }
+		    }
+		});
 		btnNewButton_3.setBounds(660, 271, 85, 21);
 		frame.getContentPane().add(btnNewButton_3);
 		
