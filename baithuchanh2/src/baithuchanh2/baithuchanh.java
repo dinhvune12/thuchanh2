@@ -69,7 +69,35 @@ public class baithuchanh {
 		btnNewButton.setBounds(59, 271, 85, 21);
 		frame.getContentPane().add(btnNewButton);
 		
+		
 		JButton btnNewButton_1 = new JButton("chucnang2");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				try {
+					int a = Integer.parseInt(textField.getText());
+					int b = Integer.parseInt(textField_1.getText());
+
+					if (a <= 0 || b <= 0) {
+						javax.swing.JOptionPane.showMessageDialog(null, "Vui lòng nhập 2 số nguyên dương.");
+						return;
+					}
+
+					int ucln = timUCLN(a, b);
+					javax.swing.JOptionPane.showMessageDialog(null, "ƯCLN của " + a + " và " + b + " là: " + ucln);
+				} catch (NumberFormatException ex) {
+					javax.swing.JOptionPane.showMessageDialog(null, "Vui lòng nhập đúng số nguyên!");
+				}
+			}
+			private int timUCLN(int a, int b) {
+				while (b != 0) {
+					int temp = b;
+					b = a % b;
+					a = temp;
+				}
+				return a;
+			}
+		});
+		
 		btnNewButton_1.setBounds(261, 271, 85, 21);
 		frame.getContentPane().add(btnNewButton_1);
 		
