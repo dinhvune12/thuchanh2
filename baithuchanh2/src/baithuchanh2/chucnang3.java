@@ -57,7 +57,7 @@ public class chucnang3 extends JFrame {
             }
         });
     }
-
+//xssssd
     public static void main(String[] args) {
         chucnang3 frame = new chucnang3();
         frame.setVisible(true);
