@@ -86,7 +86,7 @@ public class baithuchanh {
 		btnNewButton_3.setBounds(660, 271, 85, 21);
 		frame.getContentPane().add(btnNewButton_3);
 		
-		JButton btnNewButton_4 = new JButton("minhkhoa");
+		JButton btnNewButton_4 = new JButton("chucnang5");
 		btnNewButton_4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				 chucnang5 x = new chucnang5();
@@ -96,7 +96,7 @@ public class baithuchanh {
 		btnNewButton_4.setBounds(72, 352, 85, 21);
 		frame.getContentPane().add(btnNewButton_4);
 		
-		JButton btnNewButton_5 = new JButton("minhkhoa");
+		JButton btnNewButton_5 = new JButton("chucnang6");
 		btnNewButton_5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				chucnang6 x = new chucnang6();
