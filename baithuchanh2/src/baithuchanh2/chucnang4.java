@@ -58,7 +58,7 @@ public class chucnang4 extends JFrame {
 			}
 		});
 	}
-
+//xxdd
 	// Nếu bạn muốn test chạy form này độc lập
 	public static void main(String[] args) {
 		chucnang4 frame = new chucnang4();
